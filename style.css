@@ -153,19 +153,29 @@ p {
 
 
 
-@media screen and ( max-width: 860px){
-  .menu{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 20rem;
-  
+@media screen and ( max-width: 1000px){
 
+  .header{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: 3fr;
+    align-items: center;
+    text-align: center;
   }
   .conteudo{
     display: grid;
     grid-template-columns: 1fr;
     
-    max-width: 31rem;
+    max-width: 40rem;
+  }
+  h2{
+    font-size: 1,1rem
   }
   .vantagens{
     display: grid;
@@ -181,4 +191,16 @@ p {
   img{
     width: auto;
   }
+  .menu a{
+    display: grid;
+    grid-template-columns: 2fr;
+
+  }
+  p{
+    font-size:0,5rem;
+  }
 }
+@media (max-width:800px){
+
+}
+
