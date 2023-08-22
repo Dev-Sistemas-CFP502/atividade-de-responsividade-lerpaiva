@@ -9,7 +9,7 @@
 }
 
 body {
-
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #111;
   padding: 1rem;
@@ -29,7 +29,8 @@ p {
 }
 
 .menu ul {
-  display: flex;
+  display:flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   margin: 2rem;
@@ -66,6 +67,7 @@ p {
   align-items: center;
   background-color: #111111;
   padding: 1rem;
+  overflow-y: hidden;
   
 }
 
@@ -149,4 +151,116 @@ p {
   color: #ffbb00;
   font-size: 2rem;
 }
+
+
+
+@media screen and ( max-width: 1000px){
+  .introducao>h2{
+    font-size: 50px;
+  }
+  .header{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  
+  }
+  .conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    max-width: 40rem;
+  }
+  h2{
+    font-size: 50px;
+  }
+  .vantagens{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: 1,5rem;
+  }
+  .rodape{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  img{
+    width: auto;
+  }
+  .menu a{
+    display: grid;
+    grid-template-columns: 2fr;
+
+  }
+  p{
+    font-size:15px;
+  }
+}
+
+
+
+
+@media screen and ( max-width: 600px){
+  h1{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 45px;
+  }
+  .introducao>h2{
+    font-size: 35px;
+  }
+  .header{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    
+  
+  }
+  .conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    max-width: 35rem;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .vantagens{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .rodape{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  img{
+    width: auto;
+  }
+  .menu a{
+    display: grid;
+    grid-template-columns: 2fr;
+
+  }
+  p{
+    font-size:15px;
+  }
+}
+
+
 
